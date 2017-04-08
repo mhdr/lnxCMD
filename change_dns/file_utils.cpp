@@ -1,8 +1,4 @@
-#include <string>
-#include <fstream>
-#include <iostream>
-
-using namespace std;
+#include "file_utils.h"
 
 void print_lines(string file_path){
 
