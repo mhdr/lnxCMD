@@ -5,5 +5,5 @@ set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_VERBOSE_MAKEFILE ON)
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY "bin")
 
-set(SOURCE_FILES main.cpp file_utils.h file_utils.cpp)
+set(SOURCE_FILES main.cpp FileUtils.cpp FileUtils.h)
 add_executable(change_dns ${SOURCE_FILES})

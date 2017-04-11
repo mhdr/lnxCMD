@@ -1,7 +1,10 @@
-#include "file_utils.h"
+//
+// Created by mahmood on 4/11/17.
+//
 
-void print_lines(string file_path){
+#include "FileUtils.h"
 
+void FileUtils::printContent(string file_path) {
     ifstream ifs(file_path.c_str());
 
     string line;
@@ -14,8 +17,7 @@ void print_lines(string file_path){
     ifs.close();
 }
 
-void write_to_file(string file_path,string line)
-{
+void FileUtils::writeToFile(string file_path,string line) {
     ofstream ofs(file_path.c_str(),ios::out | ios::trunc);
 
     ofs.write(line.c_str(),line.length());
